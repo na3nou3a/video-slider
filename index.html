@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="video-slider">
+        <div class="active-slide">
+          <div class="controls hidden" aria-hidden="true">
+            <button class="btn repeat-btn" aria-label="play in loop" title="enable loop"></button>
+            <button class="btn pause-btn" aria-label="pause video"></button>
+            <div class="volume-container">
+              <button class="btn toggle-volume-btn" aria-label="toggle volume"></button>
+              <input type="range" value="20" name="volume" id="volume" class="volume-input" />
+            </div>
+          </div>
+          <video src="video/video1.mp4" id="main-video" type="video/mp4"></video>
+          <button class="btn toggle-play-btn" aria-label="play video"></button>
+        </div>
+        <div class="slides-container">
+          <button class="btn arrow-left-btn" aria-label="previous video"></button>
+          <div class="slides">
+            <div class="slide" id="slide-1" data-video="1">
+              <h2 class="slide-title">slide 1</h2>
+              <img src="images/video-images/min1.png" alt="slide 1" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-2" data-video="2">
+              <h2 class="slide-title">slide 2</h2>
+              <img src="images/video-images/min2.png" alt="slide 2" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-3" data-video="3">
+              <h2 class="slide-title">slide 3</h2>
+              <img src="images/video-images/min3.png" alt="slide 3" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-4" data-video="4">
+              <h2 class="slide-title">slide 4</h2>
+              <img src="images/video-images/min4.png" alt="slide 4" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-5" data-video="5">
+              <h2 class="slide-title">slide 5</h2>
+              <img src="images/video-images/min5.png" alt="slide 5" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-6" data-video="6">
+              <h2 class="slide-title">slide 6</h2>
+              <img src="images/video-images/min6.png" alt="slide 6" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-7" data-video="7">
+              <h2 class="slide-title">slide 7</h2>
+              <img src="images/video-images/min7.png" alt="slide 7" />
+              <button class="btn play-btn" aria-label="play video">
+                <img
+                  class="icon play-icon"
+                  src="images/icons/circle-play-regular.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <div class="slide" id="slide-8" data-video="8">
+              <h2 class="slide-title">slide 8</h2>
+              <img src="images/video-images/min8.png" alt="slide 8" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+            <div class="slide" id="slide-9" data-video="9">
+              <h2 class="slide-title">slide 9</h2>
+              <img src="images/video-images/min9.png" alt="slide 8" />
+              <button class="btn play-btn" aria-label="play video"></button>
+            </div>
+          </div>
+          <button class="btn arrow-right-btn" aria-label="next-video"></button>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
